@@ -1,14 +1,23 @@
+body, h1, table, th, td {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-image: url("../images/background.jpg");
   background-size: cover;
   background-position: center;
   color: white;
   font-family: 'Orbitron', sans-serif; 
+  margin: 20px;
+  font-weight: 300; 
 }
 
 .center {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 20px auto;
+  width: 90%; 
+  border-collapse: collapse; 
 }
 
 h1 {
@@ -16,53 +25,53 @@ h1 {
   font-family: 'Orbitron', sans-serif; 
   color: white;
   text-align: center;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-td {
-  padding: 10px;
+td, th {
+  padding: 15px;
   font-size: 1.2em;
-  font-family: 'Roboto Mono', monospace; 
+  font-family: 'Roboto Mono', monospace;
+  border: 1px solid #FFD700; 
+  text-align: center;
 }
 
 th {
   font-size: 1.5em;
-  color: #FFD700; 
-  font-family: 'Orbitron', sans-serif;
+  color: #FFD700;
+  font-weight: bold;
+  background-color: rgba(255, 215, 0, 0.1); 
 }
 
-tr {
-  background-color: rgba(255, 255, 255, 0.1); 
+tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.05); 
 }
 
-.image-p {
-  float: right;
-  width: 300px;
+tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.image-p, .image-s {
   padding: 5px;
-  margin: 10px 0 10px 20px;
+  margin: 10px 0;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 10px; 
+}
+
+.image-p {
+  width: 300px;
   border: 2px solid #FFD700; 
 }
 
 .image-s {
-  float: right;
   width: 200px;
-  padding: 5px;
-  margin: 10px 0 10px 20px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 2px solid #00FFFF;
-}
-
-.row2, .row3, .row4, .row5, .row6, .row7, .row8, .row9 {
-  text-align: center;
+  border: 2px solid #00FFFF; 
 }
 
 .row2 {
-  color: #1E90FF;
+  color: #1E90FF; 
 }
 
 .row3 {
@@ -70,15 +79,15 @@ tr {
 }
 
 .row4 {
-  color: #FF1493; 
+  color: #FF1493;
 }
 
 .row5 {
-  color: #9370DB; 
+  color: #9370DB;
 }
 
 .row6 {
-  color: #00CED1;
+  color: #00CED1; 
 }
 
 .row7 {
@@ -86,7 +95,7 @@ tr {
 }
 
 .row8 {
-  color: #FF6347;
+  color: #FF6347; 
 }
 
 .row9 {
